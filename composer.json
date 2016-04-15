@@ -1,6 +1,6 @@
 {
 	"name": "jaeger-app/remote-ftp",
-	"description": "A Dropbox validation library for Jaeger Validate",
+	"description": "An FTP file transport library for Jaeger Remote",
 	"require": {
 		"php": ">=5.4.0",
 		"jaeger-app/remote": "dev-master",
