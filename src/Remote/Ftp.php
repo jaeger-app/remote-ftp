@@ -1,20 +1,21 @@
 <?php
 /**
- * mithra62
+ * Jaeger
  *
- * @copyright	Copyright (c) 2015, mithra62, Eric Lamb.
- * @link		http://mithra62.com/
+ * @author		Eric Lamb <eric@mithra62.com>
+ * @copyright	Copyright (c) 2015-2016, mithra62, Eric Lamb
+ * @link		http://jaeger-app.com
  * @version		1.0
- * @filesource 	./mithra62/Remote/Ftp.php
+ * @filesource 	./Remote/Ftp.php
  */
-namespace mithra62\Remote;
+namespace JaegerApp\Remote;
 
 use League\Flysystem\Adapter\Ftp as Adapter;
 use RuntimeException;
-use mithra62\Remote\Ftp as m62Ftp;
+use JaegerApp\Remote\Ftp as m62Ftp;
 
 /**
- * mithra62 - FTP Transfer Abstraction
+ * Jaeger - FTP Transfer Abstraction
  *
  * Simple intermediary between Flysystem and mithra62
  *
@@ -33,16 +34,9 @@ class Ftp extends Adapter
     {
         @parent::connect();
     }
-
-    /**
-     * (non-PHPdoc)
-     * 
-     * @see \League\Flysystem\Adapter\Ftp::getMetadata()
-     */
     
     /**
-     *
-     * @ignore (non-PHPdoc)
+     * (non-PHPdoc)
      * @see \League\Flysystem\Adapter\Ftp::getMetadata()
      */
     public function getMetadata($path)
@@ -55,7 +49,7 @@ class Ftp extends Adapter
      * 
      * @param array $params
      *            An array of the connection details
-     * @return \mithra62\Remote\Ftp
+     * @return \JaegerApp\Remote\Ftp
      */
     public static function getRemoteClient(array $params)
     {
